@@ -1,0 +1,15 @@
+#!/bin/sh
+
+. ./,kernel_conf
+
+#cd $kernel_path
+
+time make -C $kernel_path -j 32
+
+mkdir $mod_path
+mkdir $mod_path_all
+
+make -C $kernel_path -j 32 modules_install INSTALL_MOD_PATH=$mod_path
+
+find $mod_path -name \*.ko -exec  cp {} $mod_path_all \;
+

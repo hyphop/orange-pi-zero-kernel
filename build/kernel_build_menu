@@ -1,0 +1,7 @@
+#!/bin/sh
+
+. ./,kernel_conf
+
+make -C $kernel_path menuconfig
+
+
