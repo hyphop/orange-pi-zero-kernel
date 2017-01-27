@@ -1,5 +1,8 @@
 # orange-pi-zero-kernel
+
 linux kernel 3.4.113-sun8i OrangePi Zero
+
+![OrangePiZero Board](img/orange_piz_zero_0.jpg)
 
 based and adaptated on kernel from https://github.com/igorpecovnik/lib
 
